@@ -23,6 +23,7 @@
   padding: 0 20px;
   overflow: scroll;
 }
+
 /* sh */
 .sh-name a{
   font-size: 16px;
@@ -36,6 +37,7 @@
   text-decoration: none;
   font-size: 10px;
 }
+
 /* sb */
 .sb-room{
   padding: 20px 0 40px;
