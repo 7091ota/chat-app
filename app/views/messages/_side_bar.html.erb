@@ -5,19 +5,16 @@
     <% end %>
   </div>
   <div class="sh-btn">
-    <a href="#">チャットを作成する</a>
+    <%= link_to "チャットを作成する", new_room_path %>
   </div>
 </div>
 
 <div class="side-body">
-  <div class="sb-room">
-    <div class="sb-roomname">
-      <a href="#">techroom1</a>
+  <% current_user.rooms.each do |room| %>
+    <div class="sb-room">
+      <div class="sb-roomname">
+        <a href="#"><%= room.name%></a>
+      </div>
     </div>
-  </div>
-  <div class="sb-room">
-    <div class="sb-roomname">
-      <a href="#">techroom2</a>
-    </div>
-  </div>
+  <% end %>
 </div>
